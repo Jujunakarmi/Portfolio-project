@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+* {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0; 
+   } 
+   
+
+body{
+background-color: #1f242d;
+font-family: 'Poppins', Arial, Helvetica, sans-serif;
+color: azure;
+}
+
+h1, nav{
+    display:inline;
+}
+
+.portfolio{
+   margin-left: 80px;
+}
+
+ header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+ }
+
+ li{
+   display: inline;
+    margin: 40px;
+ }
+
+ nav a{
+   text-decoration: none;
+   font-size: 20px;
+   font-weight: 500;
+   color: azure;
+   transition: 1s;
+ }
+
+ nav a:hover{
+   color:aqua;
+   
+ }
+
+ .main-page{
+   margin-left:8%;
+   margin-top: 15%;
+ }
+ 
+
+  #hello{
+   font-size: 40px;
+  }
+ 
+  #name{
+   font-size: 60px;
+   margin-left:0px;
+ }
+
+ .student{
+   color: aqua;
+ }
+
+ .cv{
+   background-color: aqua;
+   color:#1f242d;
+   padding: px;
+   text-decoration: none;
+   border-radius: 40px;
+   font-size: large;
+ }
+
+.about-me{
+   margin-top:5%;
+   margin-left: 8%;
+}
+ 
+img{
+  width: 80%;
+  border-radius: 100%;
+}
+
+.image{
+  position: absolute;
+  top:250px;
+  left:70%;
+  bottom:10px;
+
+}
+
