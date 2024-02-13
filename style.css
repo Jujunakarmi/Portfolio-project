@@ -172,11 +172,24 @@ figure{
 
 /* Media Query selector */
 
-@media screen (max-width:320px){
+@media screen and (max-width:320px){
+.header ul{
+  display: flex;
+  flex-direction: column;
+}
+  
+
   .main{
     display: flex;
     flex-wrap:wrap;
+    margin-top:100%;
+  }
+  .cv{
+    margin-bottom: 40px;
   }
 
+  .about-me{
+    margin-top:100%;
+  }
   
 }
