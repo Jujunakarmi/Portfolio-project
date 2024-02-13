@@ -3,43 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header>
-        <h1 class="portfolio">Portfolio.</h1>
+    <header class="header">
+        <h1 class="portfolio">Port<span>folio.</span></h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#about-me">About Me</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
         </ul>
         </nav>
     </header>
     
-    <section class="main-page">  
+    <section class="main">  
+        <div class="main-content">
             <h2 id="hello">Hello, It's me</h2>
             <h3 id="name">Juju Nakarmi</h3>
             <h2 id="hello"> And I am a <span class="student">Student</span></h2><br>
             <p>This is my official portfolio website to show my work and experience.</p>
-    
-        <a class="cv" href="./assests/CV/Juju Nakarmi.pdf" download>Download CV</a>
         
+            <div class="cv">
+            <a href="./assests/CV/Juju Nakarmi.pdf" download>Download CV</a>
+            </div>
+        </div>
+        
+         <div class="pro-pic">
+            <img src="./images/juju-pic.jpg" alt="A guy profile pic">
+         </div>
+      
     </section>
 
-    <section class="image">
-        <img src="/assests/images/juju-pic.jpg">
-          </section>
-
-   <section class="about-me">
+   <section class="about-me" id="about-me">
    <h1>About Me</h1>
-   <p> Hello, My name is Juju Nakarmi. I am currently studing in UNC chapel hill
-    as a bootcamp student. I like coding.
+   <p id="intro"> Hello, My name is Juju Nakarmi. I am currently studing full stack development<br> in UNC chapel hill
+    as a bootcamp student. I am very passionate about web<br> application development.I have strong problem
+     solving abilities, proven ability <br>to collaborate effectively with cross-functional teams and 
+     stakeholders.
+
+     Beyond<br> coding, I'm an avid music enthusiast and a guitarist, finding inspiration in<br> melodies
+     and rhythms that parallel the intricacies of software development.<br> I'm committed to continuous 
+     learning and growth, always seeking out new<br> challenges and opportunities to expand my skill set.
+
    </p>
-   
    </section>
 
+   <section class="work" id="work">
+     <h2>Work</h2>
+     <p> Here are some of the works I've done.</p>
+        <figure>  
+        <a href="https://jujunakarmi.github.io/Stu-mini-project/"><img class="screenshot-1" src="./images/Screenshot-1.png"></a>
+        <figcaption>Student Mini Project 1</figcaption>
+        </figure>
+         <figure>
+        <a href="https://jujunakarmi.github.io/Stu-mini-project-2/"><img class="screenshot-2" src="./images/Screenshot-2.png"></a> -->
+        <figcaption>Student Mini Project 2</figcaption>
+        </figure>
+        <figure>
+        <a href="https://jujunakarmi.github.io/Horiseon-project/"><img class="screenshot-3" src="./images/Screenshot-3.png"></a>
+        <figcaption>Student Challenge</figcaption>
+         </figure>
+
+   </section>
+
+   <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>Juju Nakarmi</p>
+    <p>jujunakarmi@gmail.com</p>
+    <p>336-329-2041</p>
+    <p>2520 McKnight Mill Rd</p>
+    <p>Greensboro, NC 27405</p>
+   </section>
+
+   <section class="contact-social">
+   <h2>Connect with me</h2>   
+
+    <a href="https://www.facebook.com/juzu.nakarmi.3/"><i class='bx bxl-facebook-circle'></i></a>
+    <a href="https://www.instagram.com/jujunakarmi/"><i class='bx bxl-instagram' ></i></a>
+    <a href="https://www.linkedin.com/in/juju-nakarmi-1a79a7181/"><i class='bx bxl-linkedin' ></i></a>
+   </section>
 </body>
 </html>

@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
-* {
-     box-sizing: border-box;
-     padding: 0;
-     margin: 0; 
-   } 
-   
+:root{
+  --main-color:rgb(0, 255, 255);
+
+}
+
 
 body{
-background-color: #1f242d;
+background-color:#1f242d;
 font-family: 'Poppins', Arial, Helvetica, sans-serif;
 color: azure;
+}
+
+span{
+  color:var(--main-color);
 }
 
 h1, nav{
@@ -25,7 +28,9 @@ h1, nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    flex-wrap: wrap;
+    height: 80px; 
+    margin-top:0px;
  }
 
  li{
@@ -42,17 +47,24 @@ h1, nav{
  }
 
  nav a:hover{
-   color:aqua;
-   
+   color:var(--main-color);
  }
 
- .main-page{
-   margin-left:8%;
-   margin-top: 15%;
- }
- 
+ .main{
+  position: relative;
+  width: 100%;
+  height:100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  }
 
-  #hello{
+  .pro-pic img{
+    width:400px;
+  }
+  
+ #hello{
    font-size: 40px;
   }
  
@@ -62,33 +74,109 @@ h1, nav{
  }
 
  .student{
-   color: aqua;
+  color: var(--main-color)
  }
+
+  .cv {
+   background-color: var(--main-color);;
+   padding: 8px;
+   border-radius: 40px;
+   font-size: 20px;
+   width: 160px;
+ }
+
+  .cv a{
+    text-decoration: none;
+    color:#1f242d;
+    }
 
  .cv{
-   background-color: aqua;
-   color:#1f242d;
-   padding: px;
-   text-decoration: none;
-   border-radius: 40px;
-   font-size: large;
+  margin-top: 40px;
  }
 
-.about-me{
+  .cv:hover{
+  box-shadow:inset 0px 0px 8px
+  var(--main-color), 0 0 15px
+  var(--main-color);
+  rgba(232, 102, 236, 1), 0 0 15px
+  rgba(232, 102, 236, 1); 
+  transition: 0.5s;
+  } 
+
+ .about-me{
    margin-top:5%;
-   margin-left: 8%;
+   margin-left:6%;
 }
- 
-img{
-  width: 80%;
-  border-radius: 100%;
+.middle {
+  text-align: left;
 }
 
-.image{
-  position: absolute;
-  top:250px;
-  left:70%;
-  bottom:10px;
+ .about-me h1, .work h2{ 
+  font-size: 60px;
+  color:var(--main-color);
 
 }
 
+ #intro{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 70px;
+}
+
+.work, .contact, .contact-social{
+  margin-top: 5%;
+  margin-left:6%;
+} 
+
+.screenshot-1, .screenshot-2, .screenshot-3{
+  width:30%;
+}
+
+.screenshot-1:hover{
+  width: 50%;
+  transition: 0.5s;
+  box-shadow:20px 10px 10px grey;
+  border-radius: 20px;
+}
+
+.screenshot-2:hover{
+  width: 50%;
+  transition: 0.5s;
+  box-shadow:20px 10px 10px grey;
+  border-radius: 20px;
+}
+
+.screenshot-3:hover{
+  width: 50%;
+  transition: 0.5s;
+  box-shadow:20px 10px 10px grey;
+  border-radius: 20px;
+}
+
+figure{
+  margin: 30px;
+}
+
+.contact-social a{
+  display:flex-row;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 60px;
+  background:transparent;
+  font-size: 50px;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+/* Media Query selector */
+
+@media screen (max-width:320px){
+  .main{
+    display: flex;
+    flex-wrap:wrap;
+  }
+
+  
+}
