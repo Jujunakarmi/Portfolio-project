@@ -177,7 +177,7 @@ figure{
   display: flex;
   flex-direction: column;
 }
-  
+}
 
   .main{
     display: flex;
@@ -192,4 +192,3 @@ figure{
     margin-top:100%;
   }
   
-}
