@@ -176,7 +176,7 @@ figure{
   display: flex;
   flex-direction: column;
 }
-}
+
 
   .main{
     display: flex;
@@ -190,4 +190,4 @@ figure{
   .about-me{
     margin-top:100%;
   }
-  
+}
