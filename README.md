@@ -8,8 +8,8 @@ You will also have my contact information with social media links.
 Here is a link to my Portfolio : [Click Here to see my Profile](https://jujunakarmi.github.io/Portfolio-project/)
 
 Here are some of the screenshots:
-![First page of screenshot](/images/Screenshot-4.png)
-![Second page of screenshot](/images/Screenshot-5.png)
+![First page of screenshot](/images/Screenshot-5.png)
+![Second page of screenshot](/images/Screenshot-4.png)
 ![Third page of screenshot](/images/Screenshot-6.png)
 
 ## Usage
